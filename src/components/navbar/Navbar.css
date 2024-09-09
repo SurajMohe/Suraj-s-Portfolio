@@ -1,0 +1,53 @@
+*{
+    color: #fff;
+}
+.navbar-main-container{
+    position: fixed;
+    padding: .7rem 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .8rem;
+    margin-top: 5rem;
+    width:fit-content;
+    height: 10vh;
+    border-radius: 50px;
+    z-index: 99999;
+    background-color: #131315;
+}
+.navbar-circle{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 2.5rem;
+     height: 2.5rem;
+     border-radius: 50%;
+     text-decoration: none;
+     background-color: #0D0D0F;
+     box-shadow: inset 0px 1px 2px .1px rgba(115, 115, 115, 0.75);
+}
+.navbar-circle:nth-child(1) {
+    background-image: url(../../../public/images/surajlogimage.png);
+    background-size: cover;
+    transition: all linear .4s;
+    border: none;
+}
+
+.navbar-circle:nth-child(1):hover {
+    background-image: url(../../../public/images/surajlogimage.png);
+    background-size: cover;
+    rotate: -60deg;
+    border: none;
+}
+.navbar-circle>i {
+    font-size: .9rem;
+    color: #fff;
+    opacity: 0.6;
+    transition: all linear .2s;
+}
+.navbar-circle:hover i {
+    font-size: 1rem;
+}
+.navbar-circle:hover {
+    box-shadow: inset 0px 0px 2px 1px rgba(115, 115, 115, 0.75);
+}
