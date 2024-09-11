@@ -1,0 +1,10 @@
+.second-page-container{
+    padding: 1rem;
+    width: 100%;
+    height: fit-content;
+    background-color: #0D0D0F;
+}
+.second-all-div-container{
+    margin: 0 auto;
+    width: 90%;
+}

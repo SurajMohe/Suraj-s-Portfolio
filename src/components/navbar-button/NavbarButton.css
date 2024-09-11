@@ -19,7 +19,10 @@
     width: 100%;
     height: 100%;
     transition: linear .3s;
-    background: linear-gradient(to top, #7604c3, #ce336c);
+    border-radius: 43.27px;
+    border-color: solid rgba(255, 255, 255, 0.01);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0.5px 1.5px inset;
+    background: radial-gradient(97.4% 66.6% at 53.1% 100%, rgb(242, 131, 5) 0%, rgb(138, 5, 227) 100%);
 }
 .navbar-button-child:hover {
     margin-top: -5%;

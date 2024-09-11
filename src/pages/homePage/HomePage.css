@@ -1,8 +1,123 @@
-.home-page-container{
+.home-page-container {
+    position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #0D0D0F;
+}
+
+.text-and-video-container {
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 55vh;
+}
+
+.text-container {
+    padding: 0rem 1rem;
+    font-family: f1;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 60%;
+    height: 100%;
+}
+
+.text-container>h4 {
+    font-size: 1.5rem;
+    font-family: f1;
+    font-weight: 100;
+    opacity: .9;
+}
+
+.text-container>h1 {
+    font-family: f3;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.002em;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(71, 255, 71);
+}
+
+.text-container h3 {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: f3;
+    font-weight: 100;
+    opacity: .7;
+}
+
+.home-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+}
+
+@media (max-width:1100px) {
+    .text-and-video-container {
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .home-video-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+   
+}
+
+@media (max-width:700px) {
+    .text-and-video-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10%;
+        /* background-color: red; */
+    }
+    .text-container>h4{
+        display: none;
+        margin-top: 2rem;
+        font-size:1.8rem ;
+    }
+     .text-container>h1{
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    .text-container>h3{
+        font-size: 1.2rem;
+    }
+    .home-video-container{
+        width: 100%;
+        height: fit-content;
+        margin-top: -5rem;
+    }
+
 }

@@ -1,31 +1,54 @@
-*{
+* {
     color: #fff;
 }
-.navbar-main-container{
+
+.navbar-main-container {
+    padding: 2.8rem .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
+    margin-top: 5rem;
+    width: fit-content;
+    height: 10vh;
+    border-width: 1px solid;
+    z-index: 99999;
+    border-radius: 55px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.142);
+   
+}
+.navbar-container{
     padding: .7rem 1.3rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: .8rem;
-    margin-top: 5rem;
-    width:fit-content;
-    height: 10vh;
     border-radius: 50px;
-    z-index: 99999;
-    background-color: #131315;
+    border-color: rgba(255, 255, 255, 0.02);
+    border-style: solid;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 55px;
+    background-color: rgba(20, 20, 22, 0.9);
+    box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
 }
-.navbar-circle{
+.navbar-circle {
     display: flex;
-     align-items: center;
-     justify-content: center;
-     width: 2.5rem;
-     height: 2.5rem;
-     border-radius: 50%;
-     text-decoration: none;
-     background-color: #0D0D0F;
-     box-shadow: inset 0px 1px 2px .1px rgba(115, 115, 115, 0.75);
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    border-bottom-width: 1.5px;
+    border-color: rgba(255, 255, 255, 0.02);
+    border-left-width: 1.5px;
+    border-right-width: 1.5px;
+    border-style: solid;
+    text-decoration: none;
+    box-shadow: rgba(255, 255, 255, 0.06) 0px 0.362176px 0.507046px -0.75px inset, rgba(255, 255, 255, 0.118) 0px 3px 4.2px -1.5px inset;
 }
+
 .navbar-circle:nth-child(1) {
     background-image: url(../../../public/images/surajlogimage.png);
     background-size: cover;
@@ -39,15 +62,24 @@
     rotate: -60deg;
     border: none;
 }
+
 .navbar-circle>i {
     font-size: .9rem;
     color: #fff;
     opacity: 0.6;
     transition: all linear .2s;
 }
+
 .navbar-circle:hover i {
     font-size: 1rem;
 }
+
 .navbar-circle:hover {
     box-shadow: inset 0px 0px 2px 1px rgba(115, 115, 115, 0.75);
+}
+
+@media (max-width:700px) {
+    .navbar-main-container {
+        top: -3%;
+    }
 }
