@@ -12,7 +12,7 @@ const Navbar = () => {
       <Link className="navbar-circle" to="/watch"><i class="ri-tv-2-line"></i></Link>
       <Link className="navbar-circle" to="/cart"><i class="ri-shopping-bag-line"></i></Link>
       <Link className="navbar-circle" to="SURAJ MOHE (1).pdf" download><i class="ri-file-3-line"></i></Link>
-      <NavbarButton />
+      <NavbarButton buttonText={"Say Hello!"}/>
       </div>
     </div>
   )

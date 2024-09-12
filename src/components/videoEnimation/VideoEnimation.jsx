@@ -1,7 +1,7 @@
 import React from 'react';
 import './VideoEnimation.css';
 
-const VideoEnimation = () => {
+export const VideoEnimation = () => {
   return (
     <div className='video-container'>
       <video className='video' autoPlay loop muted>
@@ -12,4 +12,3 @@ const VideoEnimation = () => {
   );
 }
 
-export default VideoEnimation;

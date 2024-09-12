@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 import Navbar from '../../components/navbar/Navbar';
-import VideoEnimation from '../../components/videoEnimation/VideoEnimation';
+import {VideoEnimation} from '../../components/videoEnimation/VideoEnimation';
 
 export const HomePage = () => {
   return (

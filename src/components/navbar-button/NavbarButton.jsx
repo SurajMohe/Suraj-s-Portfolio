@@ -1,11 +1,12 @@
-import React from 'react'
-import './NavbarButton.css'
-export const NavbarButton = () => {
+import React from 'react';
+import './NavbarButton.css';
+
+export const NavbarButton = ({ buttonText }) => {
     return (
         <div className='navbar-button-container'>
             <div className="navbar-button-child">
-                <h3>Say Hello! 👋</h3>
+                <h3>{buttonText} 👋</h3>
             </div>
         </div>
-    )
-}
+    );
+};
