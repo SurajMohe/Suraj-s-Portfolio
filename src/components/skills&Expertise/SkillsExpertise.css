@@ -168,17 +168,24 @@ a{
     .skill-and-expertise-container {
         flex-direction: row;
         width: 100%;
+        height: fit-content;
         gap: .7rem;
     }
 
     .skills-container {
+        display: flex;
         width: 50%;
-        height: 48%;
+        height: 50%;
     }
-
+    .skill-infinite-animation {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+        align-items: center;
+    }
     .expertise-container {
         width: 50%;
-        height: 48%;
+        height: 50%;
     }
 }
 

@@ -1,0 +1,84 @@
+.Connect-main-container {
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    position: relative;
+    width: 23rem;
+    height: 26rem;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
+
+}
+
+.connect-heading>h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: f3;
+    letter-spacing: -0.01em;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.8);
+}
+.media-container{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.9rem;
+    width: fit-content;
+    height: fit-content;
+}
+.logo-text-container>i{
+    cursor: pointer;
+    width: 1rem;
+    height: .8rem;
+    opacity: .8;
+    font-size: 1.2rem;
+}
+.logo-text-container>h3{
+    font-family:f3;
+    cursor: pointer;
+    font-size: .9rem;
+    line-height: 150%;
+    color: var(--extracted-r6o4lv, rgba(255, 255, 255, 0.7));
+}
+.logo-text-container{
+    margin-top: .6rem;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+
+}
+.handshake-email-text-container{
+    width: fit-content;
+    height: fit-content;
+}
+.handshake-email-text-container>h4{
+    font-family:f3;
+    font-size: .8rem;
+    line-height: 140%;
+    font-weight: 100;
+    color: var(--extracted-r6o4lv, rgba(255, 255, 255, 0.5));
+
+}
+.handshake-email-text-container>h3{
+    font-family:f3;
+    font-size: .8rem;
+    line-height: 140%;
+    font-weight: 100;
+    color: var(--extracted-r6o4lv, rgba(255, 255, 255, 0.5));
+}
+@media (max-width:1100px) {
+    .Connect-main-container {
+        width: 100%;
+    }
+}
+@media (max-width:700px) {
+    .Connect-main-container {
+        width: 100%;
+    }
+}
