@@ -11,10 +11,14 @@
 }
 
 .experience-container-part1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
     padding: 1rem;
     width: 100%;
     height: 80%;
-
+    justify-content: center;
 }
 
 .experience-text-and-year-container {
@@ -47,8 +51,133 @@
     border: 3px solid rgba(255, 255, 255, 0.04);
 }
 
+.product-and-date-main-container {
+    width: 95%;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.product-date-container {
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    height: 5rem;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+}
+
+.network-trace-dot {
+    position: absolute;
+    top: 7%;
+    left: -5%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.01);;
+    height: 60%;
+}
+
+.dot-line {
+    width: 9px;
+    height: 9px;
+    background-color: rgb(95, 252, 139);
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
+}
+.dot-line-second{
+    background-color: rgba(255, 255, 255, 0.17);
+}
+
+.product-date-container>h3 {
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: f3;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.product-date-container>h3 span {
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: f3;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: .5;
+}
+
+.product-date-container>h4 {
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: f3;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: .5;
+}
+
 .experience-container-part2 {
+    padding: .3rem;
+    display: flex;
+    flex-direction: column;
+    flex: none;
     width: 100%;
     height: 20%;
-    background-color: rebeccapurple;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.company-text{
+    width: fit-content;
+    height: fit-content;
+}
+.company-text>h3{
+    font-size: .8rem;
+    font-family: f3;
+    font-weight: 100;
+    opacity: .5;
+}
+.company-images-container {
+    overflow: hidden; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: start; 
+    gap: 0.5rem;
+    width: 100%;
+    height: fit-content;
+    white-space: nowrap;
+    animation: slide 8s linear infinite;
+}
+
+.company-images-container::-webkit-scrollbar {
+    display: none;
+}
+
+.company-image {
+    width: 7rem;
+    height: 3rem;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+   }
+
+   to {
+        transform: translateX(calc(-100% - 30px));
+   }
+}
+@media (max-width:1100px){
+    .experience-container{
+        margin-top: 13rem;
+        width: 100%;
+    }
+}
+@media (max-width:700px){
+    .experience-container{
+        margin-top: 3rem;
+        width: 100%;
+    }
 }

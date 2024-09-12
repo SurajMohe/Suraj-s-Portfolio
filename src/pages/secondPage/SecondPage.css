@@ -1,10 +1,22 @@
-.second-page-container{
+.second-page-container {
     padding: 1rem;
     width: 100%;
     height: fit-content;
     background-color: #0D0D0F;
 }
-.second-all-div-container{
+
+.second-all-div-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
     margin: 0 auto;
     width: 90%;
+    height: fit-content;
+}
+
+@media (max-width:1100px) {
+    .second-all-div-container {
+        width: 100%;    
+        flex-direction: column;
+    }
 }

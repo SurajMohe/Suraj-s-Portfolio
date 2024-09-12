@@ -1,0 +1,118 @@
+.sikll-and-expertise-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 21rem;
+    height: 26rem;
+    border-radius: 24px;
+    /* background-color: rgba(255, 255, 255, 0.02); */
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    padding: 1rem;
+    width: 100%;
+    height: 48%;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
+
+}
+
+.skills-container>h1 {
+    font-family: f3;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.skill-infinite-animation {
+    margin: 0 auto;
+    width: 90%;
+    height: 80%;
+}
+
+.skill-infinite-animation-left {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+.skill-animation-left-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
+
+}
+
+.skill-infinite-animation-right{
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+.expertise-container {
+    padding: 32px;
+    width: 100%;
+    height: 48%;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
+
+}
+
+@media (max-width:1100px) {
+    .sikll-and-expertise-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: .7rem;
+    }
+
+    .skills-container {
+        width: 50%;
+        height: 48%;
+    }
+
+    .expertise-container {
+        width: 50%;
+        height: 48%;
+    }
+}
+
+@media (max-width:700px) {
+    .sikll-and-expertise-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+    }
+
+    .skills-container {
+        width: 100%;
+        height: 48%;
+    }
+
+    .expertise-container {
+        width: 100%;
+        height: 48%;
+    }
+}
