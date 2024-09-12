@@ -7,7 +7,7 @@
 
 .second-all-div-container {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     gap: .7rem;
     margin: 0 auto;
     width: 90%;
@@ -16,6 +16,8 @@
 
 @media (max-width:1100px) {
     .second-all-div-container {
+        overflow: hidden;
+        margin-top: 1rem;
         width: 100%;    
         flex-direction: column;
     }

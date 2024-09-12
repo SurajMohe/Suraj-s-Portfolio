@@ -16,9 +16,10 @@
     border-radius: 55px;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.142);
-   
+
 }
-.navbar-container{
+
+.navbar-container {
     padding: .7rem 1.3rem;
     display: flex;
     align-items: center;
@@ -33,6 +34,7 @@
     background-color: rgba(20, 20, 22, 0.9);
     box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
 }
+
 .navbar-circle {
     display: flex;
     align-items: center;
@@ -77,9 +79,16 @@
 .navbar-circle:hover {
     box-shadow: inset 0px 0px 2px 1px rgba(115, 115, 115, 0.75);
 }
+@media (max-width:1100px){
+    .navbar-main-container {
+        top: -3%;
+        backdrop-filter: none;
+    }
+}
 
 @media (max-width:700px) {
     .navbar-main-container {
         top: -3%;
+        backdrop-filter: none;
     }
 }

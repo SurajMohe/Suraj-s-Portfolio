@@ -1,13 +1,12 @@
-.sikll-and-expertise-container {
+.skill-and-expertise-container{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     overflow: hidden;
+    flex-direction: column;
     position: relative;
-    width: 21rem;
+    width: 23rem;
     height: 26rem;
     border-radius: 24px;
-    /* background-color: rgba(255, 255, 255, 0.02); */
 }
 
 .skills-container {
@@ -25,6 +24,7 @@
 }
 
 .skills-container>h1 {
+    padding-bottom: 1rem;
     font-family: f3;
     font-size: 1.1rem;
     font-weight: 700;
@@ -34,7 +34,7 @@
 }
 
 .skill-infinite-animation {
-    margin: 0 auto;
+    margin: 0% auto;
     width: 90%;
     height: 80%;
 }
@@ -46,30 +46,86 @@
     width: 100%;
     height: 50%;
 }
+.skill-infinite-animation-left::-webkit-scrollbar{
+    display: none;
+}
 .skill-animation-left-text-container{
+    white-space: nowrap;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
     width: fit-content;
+    margin-left: 1rem;
     padding: 1rem;
     height: 2rem;
-    background-color: rgba(255, 255, 255, 0.04);
     border-radius: 20px;
+    animation: scroller 4s linear infinite;
+    background-color: rgba(255, 255, 255, 0.044);
     box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
 
 }
+@keyframes scroller {
+    from {
+         transform: translateX(0);
+    }
 
+    to {
+         transform: translateX(calc(-100% - 10px));
+    }
+}
+.skill-animation-left-text-container>h3{
+    font-size: .8rem;
+    font-weight: 100;
+    font-family: f3;
+    line-height: 140%;
+    opacity: .5;
+}
 .skill-infinite-animation-right{
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
     width: 100%;
     height: 50%;
-    background-color: red;
 }
+.skill-infinite-animation-right::-webkit-scrollbar{
+    display: none;
+}
+.skill-animation-right-text-container{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: 1rem;
+    padding: 1rem;
+    height: 2rem;
+    border-radius: 20px;
+    animation: scrollerright 5s linear infinite;
+    background-color: rgba(255, 255, 255, 0.044);
+    box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
+
+}
+@keyframes scrollerright {
+    from {
+         transform: translateX(0);
+    }
+
+    to {
+         transform: translateX(calc(100%));
+    }
+}
+.skill-animation-right-text-container>h3{
+    font-size: .8rem;
+    font-weight: 100;
+    font-family: f3;
+    line-height: 140%;
+    opacity: .5;
+}
+
 .expertise-container {
-    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .7rem;
+    padding: 1.2rem;
     width: 100%;
     height: 48%;
     border-radius: 24px;
@@ -78,12 +134,40 @@
     box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
 
 }
-
+.essential-text-heading{    
+    font-family: f3;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.8)
+}
+.essential-text-paragraph{
+    font-family: f3;
+    font-size: .8rem;
+    font-weight: 100;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.8)
+}
+.essential-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content
+}
+.essential-image-container>a img{
+    width:3rem;
+    height: 3rem;
+}
+a{
+    text-decoration: none;
+}
 @media (max-width:1100px) {
-    .sikll-and-expertise-container {
-        width: 100%;
-        display: flex;
+    .skill-and-expertise-container {
         flex-direction: row;
+        width: 100%;
         gap: .7rem;
     }
 
@@ -99,7 +183,7 @@
 }
 
 @media (max-width:700px) {
-    .sikll-and-expertise-container {
+    .skill-and-expertise-container {
         width: 100%;
         display: flex;
         flex-direction: column;
