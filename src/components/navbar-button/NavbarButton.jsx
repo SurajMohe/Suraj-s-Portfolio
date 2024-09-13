@@ -5,7 +5,7 @@ export const NavbarButton = ({ buttonText }) => {
     return (
         <div className='navbar-button-container'>
             <div className="navbar-button-child">
-                <h3>{buttonText} 👋</h3>
+                <h3>{buttonText}</h3>
             </div>
         </div>
     );

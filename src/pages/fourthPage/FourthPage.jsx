@@ -16,7 +16,7 @@ export const FourthPage = () => {
                     full-time or Part-time opportunities to push the boundaries of
                     design and deliver exceptional work.</span>
                 </p>
-                <NavbarButton buttonText={"Let's Talk"}/>
+                <NavbarButton buttonText={"Let's Talk 🤩"}/>
             </div>
            </div>
         </div>

@@ -23,3 +23,12 @@
         flex-direction: column;
     }
 }
+
+@media (max-width:700px) {
+    .second-all-div-container {
+        overflow: hidden;
+        margin-top: 2rem;
+        width: 100%;    
+        flex-direction: column;
+    }
+}

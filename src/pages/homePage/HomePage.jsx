@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.css';
-import Navbar from '../../components/navbar/Navbar';
 import {VideoEnimation} from '../../components/videoEnimation/VideoEnimation';
+import { Navbar } from '../../components/navbar/Navbar';
 
 export const HomePage = () => {
   return (
@@ -18,7 +18,7 @@ export const HomePage = () => {
             pixel-perfect precision.
           </h1>
           <h3>
-            <div className="dot"></div> Available for FreelancingKolkata, IND • UTC/GMT +5:30
+            <div className="dot"></div> "Available for Freelancing in Madhya Pradesh, Bhopal, India • UTC/GMT +5:30"
           </h3>
         </div>
         <div className='home-video-container'><VideoEnimation/></div>

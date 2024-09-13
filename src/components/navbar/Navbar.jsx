@@ -1,9 +1,9 @@
 import React from 'react'
 import './Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { NavbarButton } from '../navbar-button/NavbarButton'
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <div className='navbar-main-container'>
       <div className="navbar-container">
@@ -12,10 +12,8 @@ const Navbar = () => {
       <Link className="navbar-circle" to="/watch"><i class="ri-tv-2-line"></i></Link>
       <Link className="navbar-circle" to="/cart"><i class="ri-shopping-bag-line"></i></Link>
       <Link className="navbar-circle" to="SURAJ MOHE (1).pdf" download><i class="ri-file-3-line"></i></Link>
-      <NavbarButton buttonText={"Say Hello!"}/>
+      <NavbarButton buttonText={"Say Hello! 👋"}/>
       </div>
     </div>
   )
 }
-
-export default Navbar
