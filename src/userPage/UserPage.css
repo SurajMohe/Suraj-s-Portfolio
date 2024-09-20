@@ -1,9 +1,9 @@
 .user-main-container {
-    padding: 1rem;
     position: relative;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
     width: 100%;
     height: fit-content;
     background-color: #0D0D0F;
@@ -43,6 +43,84 @@
     color: rgba(255, 255, 255, 0.46);
 }
 
+.user-image-enimation-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 90vh;
+    pointer-events: none;
+}
+
+.user-image-enimation-container::-webkit-scrollbar {
+    display: none;
+}
+
+.user-page-college-design {
+    place-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 24px;
+    height: min-content;
+    overflow: visible;
+    padding: 1rem;
+    position: relative;
+    transform: perspective(1200px);
+    width: 80%;
+}
+
+.user-page-college-design>h3 {
+    font-family: "Satoshi", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 150%;
+}
+
+.user-page-college-design>p {
+    font-family: "Satoshi", sans-serif;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.46);
+    font-size: 1.7rem;
+}
+.user-education-experience-resume-main-container{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    margin: 0 auto;
+    width: 90%;
+    height: fit-content;
+}
+
+
+
+
+@media (max-width:1100px){
+    .user-main-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .user-page-text-containner>h3{
+        font-size: .8rem;
+    }
+    .user-page-text-containner>h1 {
+        font-size: 2.1rem;
+    }
+    .user-page-text-containner>p {
+        font-size: 1.1rem;
+    }
+    .user-education-experience-resume-main-container{
+        overflow: hidden;
+        margin-top: 1rem;
+        width: 100%;    
+        flex-direction: column;
+    }
+}
 @media (max-width:700px) {
     .user-main-container {
         width: 100%;
@@ -60,5 +138,20 @@
 
     .user-page-text-containner>p {
         font-size: 1.1rem;
+    }
+
+    .user-image-enimation-container {
+        width: 100%;
+        height: 40vh;
+        flex-direction: column;
+    }
+    .user-page-college-design{
+        width: 100%;
+    }
+    .user-page-college-design>h3{
+        font-size: 1.4rem;
+    }
+    .user-page-college-design>p{
+        font-size: 1rem;
     }
 }
