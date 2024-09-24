@@ -35,3 +35,13 @@ export const ExperienceDetailsmore = [
 
 ]
 
+export const companyImages = [
+    "./images/companyImages/asva.webp",
+    "./images/companyImages/githubimages-removebg-preview.png",
+    // "./images/companyImages/googlebce551173335a10a.html",
+    "./images/companyImages/instalogo-removebg-preview.png",
+    "./images/companyImages/linkedin-removebg-preview.png",
+    "./images/companyImages/mriai.webp",
+    "./images/companyImages/trace.png",
+    "./images/companyImages/pixeto.png",
+]

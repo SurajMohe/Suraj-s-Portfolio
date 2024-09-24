@@ -41,3 +41,5 @@ export const Experience = ({ experienceDetails = [], companyArray = [], showComp
         </div>
     );
 };
+
+    

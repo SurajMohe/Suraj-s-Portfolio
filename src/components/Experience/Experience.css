@@ -156,7 +156,7 @@
 }
 
 .company-image {
-    width: 7rem;
+    width: fit-content;
     height: 3rem;
 }
 
