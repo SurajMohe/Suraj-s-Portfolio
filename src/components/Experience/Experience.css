@@ -174,10 +174,16 @@
         margin-top: 13rem;
         width: 100%;
     }
+    .network-trace-dot{
+        left: -3%;
+    }
 }
 @media (max-width:700px){
     .experience-container{
         margin-top: 3rem;
         width: 100%;
+    }
+    .network-trace-dot{
+        left: -5%;
     }
 }

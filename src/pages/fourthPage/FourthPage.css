@@ -126,4 +126,7 @@
         width: 100%;
         height: fit-content;
     }
+    .text-and-button-container>h1{
+        font-size: 1.4rem;
+    }
 }

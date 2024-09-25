@@ -7,13 +7,11 @@ import { FourthPage } from '../fourthPage/FourthPage';
 
 export const MyWorkPage = () => {
 
-    // const selectedImagesAnimation = [
-    //     "https://framerusercontent.com/images/pcfMIKyvw4lvoRsWBXxywx5E.jpg?scale-down-to=512",
-    //     "https://framerusercontent.com/images/vuE1v2PFL5DxrtxYT34f858DV0.jpg?scale-down-to=512",
-    //     "https://framerusercontent.com/images/vuE1v2PFL5DxrtxYT34f858DV0.jpg?scale-down-to=512",
-    //     "https://framerusercontent.com/images/yEb2QxkegAytnoF9JY32GzbOw.jpg?scale-down-to=512",
-
-    // ];
+    const selectedImagesAnimation = [
+        "https://framerusercontent.com/images/pcfMIKyvw4lvoRsWBXxywx5E.jpg?scale-down-to=512",
+        "https://framerusercontent.com/images/vuE1v2PFL5DxrtxYT34f858DV0.jpg?scale-down-to=512",
+        "https://framerusercontent.com/images/yEb2QxkegAytnoF9JY32GzbOw.jpg?scale-down-to=512",
+    ];
 
     return (
         <div className='my-work-page-container'>
@@ -67,6 +65,16 @@ export const MyWorkPage = () => {
                 <div className='selected-dribbble-shots-main-container'>
                     <div className="selected-text-container">
                         <h1 className='selected-heading-text'>Selected <span>Dribbble</span> Shots</h1>
+                    </div>
+                    <div className="selected-dribble-image-all-container">
+                        {
+                            selectedImagesAnimation.map((img, idx) => (
+                                <div key={idx} className="select-image-card-container">
+                                    <img className='selected-main-images' src={img} alt={`Design project ${idx + 1}`} />
+                                </div>
+                            ))
+                        }
+
 
                     </div>
                 </div>

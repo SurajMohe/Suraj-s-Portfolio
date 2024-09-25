@@ -56,6 +56,12 @@
     flex-wrap: wrap;
     width: 100%;
 }
+@media (max-width:1200px){
+    .cards-main-container{
+        width: 93%;
+        padding: 1rem;
+    }  
+}
 @media (max-width:600px){
     .cards-main-container{
         width: 100%;
