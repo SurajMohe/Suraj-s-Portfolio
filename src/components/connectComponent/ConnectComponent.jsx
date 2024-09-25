@@ -1,9 +1,9 @@
 import React from 'react'
 import './ConnectCompenet.css'
 import { Link } from 'react-router-dom'
-export const ConnectComponent = () => {
+export const ConnectComponent = ({ className = '' }) => {
     return (
-        <div className='Connect-main-container'>
+        <div className={`Connect-main-container ${className}`}>
             <div className="connect-heading">
                 <h2>Connect</h2>
             </div>

@@ -5,7 +5,7 @@ import { ProjectCard } from '../../components/projectCard/ProjectCard';
 import { ConnectComponent } from '../../components/connectComponent/ConnectComponent';
 import { FourthPage } from '../fourthPage/FourthPage';
 
-export const MyWorkPage = () => {
+export const MyWorkPage = ({ className = '' }) => {
 
     const selectedImagesAnimation = [
         "https://framerusercontent.com/images/pcfMIKyvw4lvoRsWBXxywx5E.jpg?scale-down-to=512",
@@ -61,7 +61,7 @@ export const MyWorkPage = () => {
                 />
             </div>
             <div className='connect-and-selected-dribbble'>
-                <ConnectComponent />
+                <ConnectComponent className="my-work-connect-component" />
                 <div className='selected-dribbble-shots-main-container'>
                     <div className="selected-text-container">
                         <h1 className='selected-heading-text'>Selected <span>Dribbble</span> Shots</h1>

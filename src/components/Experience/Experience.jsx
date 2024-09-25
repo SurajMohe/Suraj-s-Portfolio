@@ -1,9 +1,14 @@
 import React from 'react';
 import './Experience.css';
 
-export const Experience = ({ experienceDetails = [], companyArray = [], showCompanyImages = true }) => {
+export const Experience = ({ 
+    experienceDetails = [], 
+    companyArray = [], 
+    showCompanyImages = true, 
+    containerClassName = 'experience-container' // Default class name
+}) => {
     return (
-        <div className='experience-container'>
+        <div className={containerClassName}>
             <div className="experience-container-part1">
                 <div className='experience-text-and-year-container'>
                     <h2>Experience</h2>
@@ -41,5 +46,3 @@ export const Experience = ({ experienceDetails = [], companyArray = [], showComp
         </div>
     );
 };
-
-    
