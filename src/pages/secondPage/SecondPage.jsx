@@ -1,9 +1,6 @@
 import React from 'react'
 import './SecondPage.css'
-import { Experience } from '../../components/Experience/Experience'
-import { SkillsExpertise } from '../../components/skills&Expertise/SkillsExpertise'
-import { ConnectComponent } from '../../components/connectComponent/ConnectComponent'
-import { companyImages, ExperienceDetails } from '../../components/Experience/ExperieceData'
+import { companyImages, ConnectComponent, Experience, ExperienceDetails, SkillsExpertise } from '../../components/inedx'
 export const SecondPage = () => {
   return (
     <div className='second-page-container'>

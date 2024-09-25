@@ -1,9 +1,7 @@
 import React from 'react';
 import './UserPage.css';
-import { Navbar } from '../components/navbar/Navbar';
-import { UserImageEnimation } from '../components/userImageEnimation/UserImageEnimation';
-import { UserDownImageAnimation } from '../components/userDownImageAnimation/UserDownImageAnimation';
-import {Experience} from "../components/Experience/Experience"
+import { Experience, Navbar, UserDownImageAnimation, UserImageEnimation } from '../../components/inedx';
+
 
 export const UserPage = () => {
   return (

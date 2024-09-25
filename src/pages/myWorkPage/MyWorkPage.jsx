@@ -1,9 +1,8 @@
 import React from 'react';
 import './MyWorkPage.css';
-import { Navbar } from '../../components/navbar/Navbar';
-import { ProjectCard } from '../../components/projectCard/ProjectCard';
-import { ConnectComponent } from '../../components/connectComponent/ConnectComponent';
+import { ConnectComponent, Navbar, ProjectCard } from '../../components/inedx';
 import { FourthPage } from '../fourthPage/FourthPage';
+
 
 export const MyWorkPage = ({ className = '' }) => {
 

@@ -1,15 +1,13 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { MainPage } from '../mainPage/MainPage';
-import { UserPage } from '../userPage/UserPage';
-import { MyWorkPage } from '../pages/myWorkPage/MyWorkPage';
-
+import { MainPage, MyCartPage, MyWorkPage, UserPage } from '../pages';
 export const ProtectedRoutes = () => {
 
   const ProtectedRouteMap = Object.freeze({
     "/": <MainPage />,
     "/user": <UserPage />,
     '/work':<MyWorkPage/>,
+    '/cart':<MyCartPage/>,
   });
 
 return (

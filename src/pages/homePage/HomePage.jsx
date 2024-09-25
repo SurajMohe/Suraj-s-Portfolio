@@ -1,7 +1,6 @@
 import React from 'react';
 import './HomePage.css';
-import {VideoEnimation} from '../../components/videoEnimation/VideoEnimation';
-import { Navbar } from '../../components/navbar/Navbar';
+import { Navbar, VideoEnimation } from '../../components/inedx';
 
 export const HomePage = () => {
   return (
