@@ -8,3 +8,4 @@ export {UserDownImageAnimation} from './userDownImageAnimation/UserDownImageAnim
 export {UserImageEnimation} from './userImageEnimation/UserImageEnimation.jsx'
 export {VideoEnimation} from './videoEnimation/VideoEnimation.jsx'
 export {ExperienceDetails,ExperienceDetailsmore,companyImages} from './Experience/ExperieceData.jsx'
+export {StoreProject} from './storeProject/StoreProject.jsx'
