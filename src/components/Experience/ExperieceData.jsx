@@ -32,6 +32,16 @@ export const ExperienceDetailsmore = [
         role: 'UI/UX Designer · Consultant',
         date: '2020-21'
     },
+    {
+        company: 'Spherium Finance',
+        role: 'UI/UX Designer · Consultant',
+        date: '2020-21'
+    },
+    {
+        company: 'Spherium Finance',
+        role: 'UI/UX Designer · Consultant',
+        date: '2020-21'
+    },
 
 ]
 

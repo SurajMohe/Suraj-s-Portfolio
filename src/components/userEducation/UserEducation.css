@@ -1,0 +1,80 @@
+.user-education-container {
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    overflow: hidden;
+    flex: none;
+    position: relative;
+    width: 20rem;
+    height: 26rem;
+    border-bottom-width: 2px;
+    border-color: rgba(255, 255, 255, 0.01);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-style: solid;
+    border-top-width: 2px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    box-shadow: rgba(255, 255, 255, 0.024) 0px 0.362176px 0.651917px -1px inset, rgba(255, 255, 255, 0.035) 0px 3px 5.4px -2px inset;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.education-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .4rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education-heading {
+    font-family: f2;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.course-name-heading {
+    font-family: f1;
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.college-name-heading {
+    font-family: f3;
+    font-size: .8rem;
+    line-height: 120%;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.year-heading {
+    font-family: f3;
+    font-size: .8rem;
+    font-weight: 100;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width:1100px) {
+    .user-education-container {
+        width: 49%;
+        height: 26rem;
+    }
+}
+
+@media (max-width:700px) {
+    .user-education-container {
+        width: 99%;
+        height: 26rem;
+    }
+}

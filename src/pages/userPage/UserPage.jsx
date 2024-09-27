@@ -1,6 +1,7 @@
 import React from 'react';
 import './UserPage.css';
-import { Experience, Navbar, UserDownImageAnimation, UserImageEnimation } from '../../components/inedx';
+import {FourthPage} from '../fourthPage/FourthPage'
+import { Experience, ExperienceDetailsmore, Navbar, Resume, UserDownImageAnimation, UserEducation, UserImageEnimation } from '../../components/inedx';
 
 
 export const UserPage = () => {
@@ -29,8 +30,13 @@ export const UserPage = () => {
         <p>I do more than just design – I've worked on ads and love creating videos. When I'm not busy, you'll find me sculpting, traveling, filming, or playing badminton.</p>
       </div>
       <div className='user-education-experience-resume-main-container'>
-        <Experience showCompanyImages={false} />
+         <Experience experienceDetails={ExperienceDetailsmore} showCompanyImages={false} containerClassName='user-experience-container'/>
+         <div className="user-education-and-resume-container">
+            <UserEducation/>
+            <Resume/>
+         </div>
       </div>
+      <FourthPage/>
     </div>
   );
 };
