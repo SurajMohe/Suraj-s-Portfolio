@@ -11,7 +11,10 @@ export const Navbar = () => {
       <Link className="navbar-circle" to="/user"><i class="ri-user-line"></i></Link>
       <Link className="navbar-circle" to="/work"><i class="ri-tv-2-line"></i></Link>
       <Link className="navbar-circle" to="/cart"><i class="ri-shopping-bag-line"></i></Link>
-      <Link className="navbar-circle" to="SURAJ MOHE (1).pdf" download><i class="ri-file-3-line"></i></Link>
+       {/* Use <a> tag for download functionality */}
+       <a className='navbar-circle' href='/SURAJ_MOHE.pdf' download>
+          <i className='ri-file-3-line'></i>
+        </a>
       <NavbarButton buttonText={"Say Hello! 👋"}/>
       </div>
     </div>
