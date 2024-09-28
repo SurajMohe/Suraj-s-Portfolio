@@ -1,7 +1,7 @@
 import React from 'react';
 import './UserPage.css';
 import {FourthPage} from '../fourthPage/FourthPage'
-import { Experience, ExperienceDetailsmore, Navbar, Resume, UserDownImageAnimation, UserEducation, UserImageEnimation } from '../../components/inedx';
+import { Experience, ExperienceDetailsmore, ImageSlider, MusicSetUp, Navbar, Resume, UserDownImageAnimation, UserEducation, UserImageEnimation } from '../../components/inedx';
 
 
 export const UserPage = () => {
@@ -35,6 +35,16 @@ export const UserPage = () => {
             <UserEducation/>
             <Resume/>
          </div>
+      </div>
+      <div className="music-and-photo-slider-main-container">
+        <div className="musics-main-container">
+         <h1 className='vibe-hustling-heading'>Vibe while hustling 🎧</h1>
+         <MusicSetUp/>
+        </div>
+        <div className="slider-main-container">
+          <h1 className='work-place-heading'>WorkPlace Snap 📸</h1>
+            <ImageSlider/>
+        </div>
       </div>
       <FourthPage/>
     </div>

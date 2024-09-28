@@ -11,4 +11,6 @@ export {ExperienceDetails,ExperienceDetailsmore,companyImages} from './Experienc
 export {StoreProject} from './storeProject/StoreProject.jsx'
 export {UserEducation} from './userEducation/UserEducation.jsx'
 export {Resume} from './resume/Resume.jsx'
-export {} from './userEducation/UserEducationData.jsx'
+export {UserEducationData} from './userEducation/UserEducationData.jsx'
+export {MusicSetUp} from './musicsSetup/MusicSetUp.jsx'
+export {ImageSlider} from  './imageSlider/ImageSlider.jsx'
