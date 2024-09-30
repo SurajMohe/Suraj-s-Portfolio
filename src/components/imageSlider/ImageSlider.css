@@ -1,8 +1,7 @@
 .images-slider-main-container {
-    width: 90%;
-    height: 23rem;
+    width: 70%;
+    height: 80%;
     overflow: hidden; /* Hide overflow to create a frame for the slider */
-    margin: auto; /* Optional: Center the slider container */
   }
   
   .wrapper {

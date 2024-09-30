@@ -1,7 +1,7 @@
 import React from 'react';
 import './UserPage.css';
-import {FourthPage} from '../fourthPage/FourthPage'
-import { Experience, ExperienceDetailsmore, ImageSlider, MusicSetUp, Navbar, Resume, UserDownImageAnimation, UserEducation, UserImageEnimation } from '../../components/inedx';
+import { FourthPage } from '../fourthPage/FourthPage'
+import { Experience, ExperienceDetailsmore, ImageSlider, Navbar, Resume, UserDownImageAnimation, UserEducation, UserImageEnimation } from '../../components/inedx';
 
 
 export const UserPage = () => {
@@ -30,23 +30,35 @@ export const UserPage = () => {
         <p>I do more than just design – I've worked on ads and love creating videos. When I'm not busy, you'll find me sculpting, traveling, filming, or playing badminton.</p>
       </div>
       <div className='user-education-experience-resume-main-container'>
-         <Experience experienceDetails={ExperienceDetailsmore} showCompanyImages={false} containerClassName='user-experience-container'/>
-         <div className="user-education-and-resume-container">
-            <UserEducation/>
-            <Resume/>
-         </div>
+        <Experience experienceDetails={ExperienceDetailsmore} showCompanyImages={false} containerClassName='user-experience-container' />
+        <div className="user-education-and-resume-container">
+          <UserEducation />
+          <Resume />
+        </div>
       </div>
       <div className="music-and-photo-slider-main-container">
         <div className="musics-main-container">
-         <h1 className='vibe-hustling-heading'>Vibe while hustling 🎧</h1>
-         <MusicSetUp/>
+          <h1 className='vibe-hustling-heading'>Vibe while hustling 🎧</h1>
+          <div className="spotify-main-container">
+            <iframe
+              src="https://open.spotify.com/embed/playlist/11s2lGT8TieyBqlcAJx4xL?theme=1"
+              title="Spotify Playlist" // Added title attribute
+              frameBorder="0"
+            ></iframe>
+              <iframe
+              src="https://open.spotify.com/embed/playlist/3W8HSXipXEvxKXj4IGteIO?theme=1"
+              title="Spotify Playlist" // Added title attribute
+              frameBorder="0"
+            ></iframe>
+
+          </div>
         </div>
         <div className="slider-main-container">
           <h1 className='work-place-heading'>WorkPlace Snap 📸</h1>
-            <ImageSlider/>
+          <ImageSlider />
         </div>
       </div>
-      <FourthPage/>
+      <FourthPage />
     </div>
   );
 };
