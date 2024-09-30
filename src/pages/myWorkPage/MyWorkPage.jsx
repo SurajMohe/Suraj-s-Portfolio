@@ -1,7 +1,7 @@
 import React from 'react';
 import './MyWorkPage.css';
 import { FourthPage } from '../fourthPage/FourthPage';
-import { ConnectComponent, Navbar, ProjectCard } from '../../components';
+import { ConnectComponent, ProjectCard } from '../../components';
 
 
 export const MyWorkPage = ({ className = '' }) => {
@@ -14,7 +14,6 @@ export const MyWorkPage = ({ className = '' }) => {
 
     return (
         <div className='my-work-page-container'>
-            <Navbar />
             <div className='my-work-text-container'>
                 <h1 className='project-text'>Projects</h1>
                 <p className='my-work-paragraph'>

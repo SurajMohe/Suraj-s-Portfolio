@@ -1,13 +1,12 @@
 import React from 'react';
 import './UserPage.css';
 import { FourthPage } from '../fourthPage/FourthPage'
-import { Experience, ExperienceDetailsmore, ImageSlider, Navbar, Resume, UserDownImageAnimation, UserEducation, UserImageEnimation } from '../../components';
+import { Experience, ExperienceDetailsmore, ImageSlider, Resume, UserDownImageAnimation, UserEducation, UserImageEnimation } from '../../components';
 
 
 export const UserPage = () => {
   return (
     <div className='user-main-container'>
-      <Navbar />
       <div className="user-page-text-containner">
         <h3>ABOUT ME</h3>
         <h1>

@@ -1,11 +1,10 @@
 import React from 'react';
 import './HomePage.css';
-import { Navbar, VideoEnimation } from '../../components';
+import { VideoEnimation } from '../../components';
 
 export const HomePage = () => {
   return (
     <div className='home-page-container'>
-      <Navbar />
       <div className='text-and-video-container'>
         <div className="text-container">
           <h4>Hey there!</h4>
