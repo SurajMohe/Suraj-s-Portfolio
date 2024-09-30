@@ -1,6 +1,6 @@
 import React from 'react'
 import './ThirdPage.css'
-import { ProjectCard } from '../../components/projectCard/ProjectCard'
+import { ProjectCard } from '../../components'
 
 export const ThirdPage = () => {
     return (

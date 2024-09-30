@@ -1,6 +1,6 @@
 import React from 'react'
 import './FourthPage.css'
-import { NavbarButton } from '../../components/inedx'
+import { NavbarButton } from '../../components'
 
 export const FourthPage = () => {
     return (

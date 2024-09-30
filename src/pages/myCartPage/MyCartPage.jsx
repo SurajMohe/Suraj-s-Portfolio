@@ -1,7 +1,7 @@
 import React from 'react'
 import './MyCartPage.css'
-import { Navbar,StoreProject } from '../../components/inedx'
 import {FourthPage} from '../fourthPage/FourthPage'
+import { Navbar, StoreProject } from '../../components'
 
 export const MyCartPage = ({cartImage,headingText,headingTitle}) => {
   return (
